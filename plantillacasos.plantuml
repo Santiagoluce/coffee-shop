@@ -1,0 +1,19 @@
+@startuml casosusocoffeeshop
+left to right direction
+actor "Estudiante" as EntityStereotypeFontColor
+actor "Administrador Cafeteria" as admin
+
+rectangle "Sistemas de Pedidos CoffeShop"{
+    usecase "Inicar Sesion" as UC1
+    usecase "Realizar pedido" as UC2
+    
+}
+
+est --> UC1
+est --> UC2
+admin --> UC1
+admin --> UC2
+
+
+
+@enduml
